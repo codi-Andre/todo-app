@@ -1,50 +1,43 @@
-# React + TypeScript + Vite
+<h1 align="center" style="font-weight: bold;">Todo app</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+ <a href="#tech">Technologies</a> • 
+ <a href="#started">Getting Started</a>
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+    <b>A simple app to test, algorithms, concepts, data structures and javascript libraries.</b>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h2 id="technologies">💻 Technologies</h2>
 
-## Expanding the ESLint configuration
+- Vite
+- react
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<h2 id="started">🚀 Getting started</h2>
 
-- Configure the top-level `parserOptions` property like this:
+How to run locally
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+<h3>Prerequisites</h3>
+
+Here you will encounter a list of all prerequisites necessary for running this project:
+
+- [NodeJS](https://nodejs.org/en)
+
+<h3>Cloning</h3>
+
+How to clone this project
+
+```bash
+git clone git@github.com:codi-Andre/todo-app.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+<h3>Starting</h3>
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+How to start this project
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+cd todo-app && npm i
+
+npm run dev
 ```
